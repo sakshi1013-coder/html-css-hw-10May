@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog layout</title>
+</head>
+<style>
+
+body {
+      font-family: Arial, sans-serif;
+      background:#e5e0d8;
+      padding: 20px;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      grid-area: header;
+      background: #b3b792;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      grid-area: main;
+      background:#d2ab80;
+      padding: 20px;
+    }
+
+    aside {
+      grid-area:sidebar;
+      background: #e5d2b8;
+      padding: 20px;
+    }
+
+    .contact{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    footer {
+      grid-area: footer;
+      background: #725c3a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  summary {
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        summary::before {
+            content: "✩";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1em;
+            transition: transform 0.3s ease;
+        }
+        details[open] summary::before {
+            content: "⇓";
+        }
+        p, ul {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+            margin: 0 0 10px 0;
+        }
+        details[open] p, details[open] ul {
+            opacity: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        img{
+          border-radius: 50%;
+          height: 100px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+  
+  .mover{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    animation: mover 2s ease-in-out infinite;
+  }
+  @keyframes mover {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-100px);
+      }
+      0%, 100% {
+        transform: translateX(0);
+      }
+    }
+</style>
+<body>
+  <div class="blog-container">
+    <header>
+<h1>My Blog</h1>
+    </header>
+    <main>
+      <h2>Lastest Post</h2>
+      <details name="notes">
+        <summary>Quant Finance will be the future??</summary>
+        <p>In the last decade, the financial industry has undergone a quiet revolution. Gone are the days when intuition and traditional valuation methods alone could consistently outperform markets.
+           Today, the rise of data-driven decision-making and algorithmic execution has made quantitative finance a cornerstone of modern investing.
+        </p>
+        <p>
+         <h3> What Is Quant Finance Today?</h3>
+Quantitative finance, or "quant finance," involves the use of mathematical models, data science, and computational tools to analyze markets and make financial decisions.
+From pricing derivatives to portfolio optimization and high-frequency trading, quants have become central to nearly every major financial institution.
+But quant finance in 2025 isn't just about stochastic calculus and closed-form solutions.
+It's now deeply entwined with machine learning, alternative data, and automated infrastructure.
+        </p>
+        <p>
+        <h3> Key Trends Shaping the Future</h3>
+<h5>1. Machine Learning Beyond Prediction</h5>
+ML is no longer a novelty in quant circles. Techniques like XGBoost, random forests, and deep learning architectures are used not just to forecast asset prices, but to enhance risk models, identify structural breaks in time series, and even detect anomalies in compliance.
+
+More firms are adopting model explainability tools to better understand how these complex models behave in production. This is especially critical given the regulatory scrutiny many trading models now face.
+
+<h5>2. Alternative Data as Alpha</h5>
+Traditional data sources—like earnings reports and price feeds—are no longer enough. Quant teams are mining satellite imagery, social media sentiment, consumer transaction data, and even weather patterns to gain informational edge. The challenge lies not just in access, but in transforming raw data into a usable signal.
+
+<h5>3. Cloud-Native Quant Infrastructure</h5>
+Computation is becoming increasingly decentralized. Many quant platforms now run in the cloud, leveraging serverless architectures, GPU clusters, and real-time data pipelines. This shift has reduced infrastructure costs and made it easier to scale complex simulations.
+        </p>
+    </details>
+    <details name="notes">
+      <summary>Gen Ai a thread to life or a path to success??</summary>
+      <p>
+        Few technologies have captured the public imagination—and concern—like generative AI. From realistic image generation to human-like conversation and code-writing, Gen AI has proven it can augment, disrupt, and even redefine how we live and work. But with great power comes an equally large question:
+
+Is generative AI a threat to life, or a path to unprecedented success?
+
+<h4>The Case for Concern</h4>
+Let's address the fear first—because it’s real, and not entirely unfounded.
+
+Job Displacement: As Gen AI becomes better at tasks like writing, customer service, coding, and even legal drafting, entire industries may face restructuring. The pace of this change could outstrip our ability to reskill workers.
+
+Misinformation & Deepfakes: Gen AI can fabricate believable text, images, and video—fueling the rise of fake news, impersonation scams, and digital propaganda. This challenges our ability to trust what we see and hear.
+
+Loss of Human Agency: There’s a risk of over-reliance on AI. When we start outsourcing thinking—ethical, creative, or strategic—we may lose the very qualities that define us as human.
+
+Existential Risk: While debated, some experts warn of a future where superintelligent AI surpasses human control. The “alignment problem” remains unsolved: how do we ensure AI’s goals always align with human values?
+
+<h4>The Case for Success</h4>
+Now let’s talk about the upside—which, if managed responsibly, is enormous.
+
+Supercharged Productivity: From automating repetitive tasks to accelerating R&D in medicine, Gen AI can boost efficiency and innovation across industries. It’s like giving every worker a powerful assistant.
+
+Creative Empowerment: Artists, writers, and musicians are using AI to push creative boundaries, co-creating work that would’ve been impossible before. Gen AI can democratize creativity—not replace it.
+
+Education and Access: Personalized tutors, instant translation, accessible content for all learning styles—Gen AI has the power to transform education and make knowledge more inclusive than ever.
+
+Scientific Discovery: AI systems like AlphaFold are already revolutionizing biology. Gen AI could accelerate breakthroughs in everything from climate modeling to space exploration.
+
+<h4>The Real Answer: It’s Up to Us</h4>
+Framing Gen AI as either a “threat” or a “path to success” misses the point. It’s both—and neither. Like any powerful tool, its impact depends on how we use it.
+
+Are governments and tech companies building with safety and fairness in mind?
+
+Are we educating society to adapt, question, and collaborate with AI?
+
+Are we setting up regulatory and ethical guardrails before it’s too late?
+
+The story of Gen AI is not just being written by engineers. It’s being shaped by policymakers, educators, business leaders, and everyday users. That means we all have a role to play.
+      </p>
+  </details>
+  <div class="mover">
+    <img src="https://i.pinimg.com/originals/12/4a/28/124a28d79e785967c77200d8b266a649.gif" alt="img">
+  </div>
+    </main>
+  <aside>
+    <h3>About Me</h3>
+    <div class="contact">
+    <div>
+      <a class="link" href="https://github.com/sakshi1013-coder" target="_blank"><img src="https://i.pinimg.com/736x/ac/58/ea/ac58ea5f8c7a2a3d707201e3352874f9.jpg" alt="Example Image"></a>
+    </div>
+    <div>
+      <a class="link" href="https://www.linkedin.com/in/sakshi-shingole-484913315/" target="_blank"><img src="https://i.pinimg.com/736x/b2/f8/28/b2f828513f21444829a619ce563d4d4e.jpg" alt="Example Image"></a>
+    </div>
+    <div>
+      <a class="link" href="mailto:sakmochi101306@gmail.com" target="_blank"><img src="https://i.pinimg.com/736x/26/c7/08/26c7089c48f9bb763e9cca3db502bd57.jpg" alt="Example Image"></a>
+    </div>
+    </div>
+  </aside>
+</div>
+  <footer>&copy; Sakshi Shingole. All rights reserved.</footer>
+</body>
+</html>

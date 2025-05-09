@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Dashboard with CSS Grid</title>
+</head>
+<body>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #62765b;
+      color: #333;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "chart stats"
+        "calendar notifications";
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .widget {
+      background-color: #f3ccb2;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .header {
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chart {
+      grid-area: chart;
+    }
+
+    .stats {
+      grid-area: stats;
+    }
+
+    .calendar {
+      grid-area: calendar;
+    }
+
+    .notifications {
+      grid-area: notifications;
+    }
+
+    .widget h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    @media (max-width: 768px) {
+      .dashboard {
+        grid-template-areas:
+          "header"
+          "chart"
+          "stats"
+          "calendar"
+          "notifications";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="widget header">
+      <h2>📊 My Dashboard</h2>
+      <p>Welcome back, Sakshi</p>
+    </div>
+
+    <div class="widget chart">
+      <h2>📈 Financial Overview</h2>
+      <p>Total Balance: $12,430.00</p>
+      <p>Income: $5,200 | Expenses: $2,100</p>
+    </div>
+
+    <div class="widget stats">
+      <h2>📊 Stats</h2>
+      <ul>
+        <li>Tasks: 12</li>
+        <li>Goals Completed: 8</li>
+        <li>Pending: 4</li>
+      </ul>
+    </div>
+
+    <div class="widget calendar">
+      <h2>📅 Calendar</h2>
+      <p>No events today.</p>
+    </div>
+
+    <div class="widget notifications">
+      <h2>🔔 Notifications</h2>
+      <ul>
+        <li>New message from sanjana</li>
+        <li>Expense report updated</li>
+        <li>Meeting reminder at 3PM</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

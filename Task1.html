@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📗 Student Dev Handbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom rgb(209, 236, 243), white);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        details {
+            width: 90%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #d1d9e6;
+            transition: all 0.3s ease;
+        }
+        details[open] {
+            background: #f9fcff;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        summary::before {
+            content: "⇒";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1em;
+            transition: transform 0.3s ease;
+        }
+        details[open] summary::before {
+            content: "⇓";
+        }
+        p, ul {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+            margin: 0 0 10px 0;
+        }
+        details[open] p, details[open] ul {
+            opacity: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>📘 Student Dev Handbook</h1>
+    <details name="notes">
+        <summary>What is HTML?</summary>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages.</p>
+    </details>
+    <details name="notes">
+        <summary>What is a Semantic Tag?</summary>
+        <p>Semantic tags like <article>, <section>, <header>, and <footer> convey meaning and structure to your content.</p>
+    </details>
+    <details name="notes">
+        <summary>Difference Between id and class</summary>
+        <p>The <code>id</code> attribute is unique for a single element, while <code>class</code> can be used for multiple elements.</p>
+    </details>
+    <details name="notes">
+        <summary>What is a Element?</summary>
+        <p>The element is used to define a visible heading for the content of a  element.</p>
+    </details>
+    <details name="notes">
+        <summary>What is CSS?</summary>
+        <p>CSS (Cascading Style Sheets) is used to style HTML elements, controlling layout, colors, fonts, and more.</p>
+    </details>
+    <details name="notes">
+    <summary>What is meaning of Markup?</summary>
+    <p>Markup refers to a system of symbols or tags inserted within a text document to define its structure, formatting, or relationships between different parts of the content.</p>
+    </details>
+</body>
+</html>

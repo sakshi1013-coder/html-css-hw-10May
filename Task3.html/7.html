@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu With Css Grid</title>
+</head>
+<body>
+  <style>
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 36px;
+    color: #b22222;
+    margin-bottom: 5px;
+  }
+
+  header p {
+    margin: 0;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .menu-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+
+  .menu-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #b22222;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+    .menu-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>घरगुती जेवन</h1>
+  <p>Fine Maharastrian Dining!!</p>
+</header>
+
+<div class="menu-grid">
+  <div class="menu-section">
+    <h2>Starters</h2>
+    <div class="menu-item">
+      <span>भजी</span>
+      <span>₹30</span>
+    </div>
+    <div class="menu-item">
+      <span>मसाला पापड</span>
+      <span>₹50</span>
+    </div>
+    <div class="menu-item">
+      <span>पाव भाजी</span>
+      <span>₹30</span>
+    </div>
+  </div>
+  <div class="menu-section">
+    <h2>Main Dishes</h2>
+    <div class="menu-item">
+      <span>मटण भाकर</span>
+      <span>₹250</span>
+    </div>
+    <div class="menu-item">
+      <span> मच्छी तळणे</span>
+      <span>₹500</span>
+    </div>
+    <div class="menu-item">
+      <span>थाळी</span>
+      <span>₹400</span>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <span>आमरस</span>
+      <span>₹150</span>
+    </div>
+    <div class="menu-item">
+      <span>मोदक</span>
+      <span>₹50</span>
+    </div>
+    <div class="menu-item">
+      <span>पुरणपोळी</span>
+      <span>₹200</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

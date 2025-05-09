@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4</title>
+</head>
+<style>
+  .card{
+    background-color: lightgray;
+    padding:30px;
+  }
+  #name{
+   color: darkblue;
+  }
+  .bio{
+    font-style: italic;
+  }
+  .card a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+nav ul{
+  list-style: none;
+}
+nav a{
+  text-decoration: uppercase;
+}
+nav a:hover{
+  color:red;
+}
+input{
+  border-color: rgb(239, 149, 149);
+}
+input:focus{
+  border-color: blue;
+  outline: none;
+}
+input[type="email"] {
+  background-color: #f9f9ff; 
+}
+button{
+  background-color: green;
+  color: white;
+}
+.h3::before{
+background-color: red;
+content: "";
+display: block;
+height: 4px;
+}
+.p::first-line{
+  text-transform: uppercase;
+}
+.p::before {
+  content: "* ";
+  color: blue;
+  font-weight: bold;
+}
+.blog h3{
+  font-weight: bold;
+}
+.blog article:nth-of-type(2) p {
+  color: darkgreen;
+}
+.blog article:nth-of-type(2){
+  background-color: antiquewhite;
+  padding:30px
+}
+</style>
+<body>
+  <h2>🧪 CSS Selectors – Practical Coding Exercises</h2>
+
+  <h3>Exercise 1: Style a Simple Profile Card</h3>
+  <div class="card">
+    <h2 id="name">Alex Johnson</h2>
+    <p class="bio">Front-end Developer from New York</p>
+    <a href="#">View Profile</a>
+  </div><hr>
+  <h3>Exercise 2: Navigation Menu Styling</h3>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav><hr>
+  
+  <h3>Exercise 3: Form Field Focus</h3>
+  <form>
+    <label>Email:</label>
+    <input type="email" />
+  
+    <label>Password:</label>
+    <input type="password" />
+  
+    <button>Login</button>
+  </form><hr>
+  
+  <h3>Exercise 4: Use Pseudo-elements</h3>
+  <article>
+    <h3 class="h3">Breaking News</h3>
+    <p class="p">Some important text goes here.</p>
+  </article><hr>
+  
+  <h3>Exercise 5: Advanced Targeting</h3>
+  <section class="blog">
+    <h2>Blog Posts</h2>
+    <article>
+      <h3>Post One</h3>
+      <p>Text of post one.</p>
+    </article>
+    <article>
+      <h3>Post Two</h3>
+      <p>Text of post two.</p>
+    </article>
+  </section><hr>
+  
+</body>
+</html>
