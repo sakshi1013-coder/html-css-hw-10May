@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Product Grid</title>
+</head>
+<body>
+  <style>
+    body{
+      background-color: rgb(217, 217, 217);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      box-shadow: 0px 0px 15px rgba(33, 33, 33, 0.2);
+      padding: 20px;
+    }
+    .card{
+      background-color: rgb(229, 229, 229);
+      padding: 1em;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 4px 4px rgba(33, 33, 33, 0.2);
+     
+    }
+    .img1{
+      width: 300px;
+      height: 500px;
+      border-radius: 5px;
+      margin-right: 20px;
+     
+    }
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+    h1,h2{
+     
+      text-align: center;
+      color: black;
+    }
+    p{
+      color:rgb(0, 0, 0);
+      text-align: center;
+    }
+    @media (min-width:400px){
+      .container1{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    @media (min-width:600px){
+      .container1{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width:900px){
+      .container1{
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    </style>
+
+    <body>
+      <h1>On Sale Products!!</h1>
+      <div class="container1">
+        <div class="card ">
+          <img src="https://i.pinimg.com/736x/39/27/1a/39271aeedcca82173249d49260c5d2be.jpg" alt="socks">
+          <h2>Socks</h2>
+          <p>₹100.0</p>
+        </div>
+        <div class="card ">
+          <img src="https://i.pinimg.com/736x/62/91/55/6291552647f78cc3e595672b6082536b.jpg" alt="coffee cups">
+          <h2>Coffee Cups</h2>
+          <p>₹300.0</p>
+        </div>
+        <div class="card ">
+          <img src="https://i.pinimg.com/736x/5c/8c/6a/5c8c6a0eb1279f6e42ed187e5433ba4f.jpg" alt="vaseline">
+          <h2>Vaseline</h2>
+          <p>₹50.0</p>
+        </div>
+        <div class="card ">
+          <img class="img1" src="https://i.pinimg.com/736x/d2/a8/9f/d2a89f5914bf1a97ea36b92c8ad0f325.jpg" alt="pants">
+          <h2>Cargo pants</h2>
+          <p>₹800.0</p>
+        </div>
+        <div class="card ">
+          <img src="https://i.pinimg.com/736x/21/ff/af/21ffafc671d9050bafb220cfdceb8c39.jpg" alt="toys">
+          <h2>Toys</h2>
+          <p>₹100.0</p>
+        </div>
+        <div class="card ">
+          <img src="https://i.pinimg.com/736x/7d/c2/00/7dc2006563d3df630bc645f7f0b33682.jpg" alt="plants">
+          <h2>Plants</h2>
+          <p>₹300.0</p>
+        </div>
+        <div class="card ">
+          <img class="img1"  src="https://i.pinimg.com/736x/d5/a4/a0/d5a4a01dc6a4ee23235c5478b6cb9b81.jpg" alt="kurti">
+          <h2>Kurti Suit</h2>
+          <p>₹1200.0</p>
+        </div>
+        <div class="card ">
+          <img class="img1"  src="https://i.pinimg.com/736x/76/28/74/7628746ed73ef92e6ef53de468a93528.jpg" alt="shirt">
+          <h2>Printed Shirt</h2>
+           <p>₹900.0</p>
+        </div>
+</body>
+</html>
