@@ -1,6 +1,7 @@
 # html-css-hw-10May
 output for task 1-
 <img width="1710" alt="Screenshot 2025-05-09 at 11 53 14 PM" src="https://github.com/user-attachments/assets/2bc1e089-6ec5-4309-b4d3-8f8c12b4372c" />
+<img width="1710" alt="Screenshot 2025-05-10 at 12 13 12 AM" src="https://github.com/user-attachments/assets/e11b0acf-49d7-4ee5-a9c3-99194cca4ea7" />
 
 output for task 2-
 <img width="1710" alt="Screenshot 2025-05-09 at 11 53 51 PM" src="https://github.com/user-attachments/assets/7215b887-9144-4154-9277-dde5b053d998" />
@@ -20,6 +21,8 @@ sub taskes:
 
 3.3-
 <img width="1710" alt="Screenshot 2025-05-09 at 11 57 14 PM" src="https://github.com/user-attachments/assets/76745464-26b8-4ad8-89df-f05645893ac1" />
+<img width="1710" alt="Screenshot 2025-05-10 at 12 14 28 AM" src="https://github.com/user-attachments/assets/0b4888f1-e1af-4990-a3e0-b4d988635672" />
+<img width="1710" alt="Screenshot 2025-05-10 at 12 14 42 AM" src="https://github.com/user-attachments/assets/ab9e4972-cf72-4b61-9191-9b613cb6bfb9" />
 
 3.4-
 <img width="1710" alt="Screenshot 2025-05-09 at 11 57 40 PM" src="https://github.com/user-attachments/assets/96147013-3a18-4b50-9b21-3d9765113b85" />
@@ -50,3 +53,4 @@ sub taskes:
 <img width="1710" alt="Screenshot 2025-05-10 at 12 08 12 AM" src="https://github.com/user-attachments/assets/c06da650-b104-4b46-98da-a8b62debc427" />
 
 output for task 4-
+<img width="1710" alt="Screenshot 2025-05-10 at 12 12 30 AM" src="https://github.com/user-attachments/assets/25a22b7a-63ab-4780-91f8-df5babb477d5" />
